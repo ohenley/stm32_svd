@@ -1,0 +1,13 @@
+name = "stm32_svd"
+description = "Shiny new project"
+version = "0.1.0-dev"
+
+authors = ["Olivier Henley"]
+maintainers = ["Olivier Henley <olivier.henley@gmail.com>"]
+maintainers-logins = ["ohenley"]
+
+[configuration.variables]
+device = { type = "Enum", values = ["stm32f746", ], default = "stm32f746" }
+
+[[depends-on]]
+hal = "~0.3.0"
